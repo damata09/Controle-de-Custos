@@ -1,0 +1,90 @@
+.expenses-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.expenses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.expenses-header {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.expenses-header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.stats-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.actions-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.loading {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.05rem;
+  padding: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .expenses-header h1 {
+    font-size: 2rem;
+  }
+
+  .stats-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .actions-bar {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+

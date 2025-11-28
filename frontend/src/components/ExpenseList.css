@@ -1,0 +1,233 @@
+.expense-list {
+  margin-top: 1.25rem;
+}
+
+.list-title {
+  color: var(--text);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.expense-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(11,16,32,0.06);
+  transition: all 0.16s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.expense-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 44px rgba(109,40,217,0.08);
+}
+
+.expense-category-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expense-content {
+  margin-bottom: 1rem;
+}
+
+.expense-description {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.expense-amount {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-2);
+}
+
+.expense-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  padding: 0.25rem;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.empty-state {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(11,16,32,0.06);
+}
+
+.empty-state p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.empty-hint {
+  font-size: 0.9rem !important;
+  color: #999 !important;
+}
+
+@media (max-width: 768px) {
+  .expense-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.expense-list {
+  margin-top: 1.25rem;
+}
+
+.list-title {
+  color: var(--text);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.expense-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  transition: all 0.12s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.expense-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+}
+
+.expense-category-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expense-content {
+  margin-bottom: 1rem;
+}
+
+.expense-description {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.expense-amount {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.expense-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  padding: 0.25rem;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.empty-state {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+}
+
+.empty-state p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.empty-hint {
+  font-size: 0.9rem !important;
+  color: #999 !important;
+}
+
+@media (max-width: 768px) {
+  .expense-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
