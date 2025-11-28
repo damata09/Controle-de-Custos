@@ -1,5 +1,7 @@
 # 💰 Aplicação de Controle de Custos
 
+> Nota: UI atualizada com tema roxo moderno e melhorias visuais (adicionadas nesta branch e agora publicadas em `main`).
+
 Aplicação full-stack para controle de custos com backend em Node.js + MongoDB e frontend em React.
 
 ## 📋 Funcionalidades
